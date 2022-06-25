@@ -1,0 +1,14 @@
+body{
+    background-image: url('../hangman/assets/back.jpg');
+    
+    
+}
+
+.jumbotron{
+
+    margin-top: 15%;
+}
+img{
+    max-width: 200px;
+    max-height: 200px;
+}
