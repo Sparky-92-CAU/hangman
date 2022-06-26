@@ -34,11 +34,11 @@ const setBoard = function(){
     winsID.innerText = `Number of Wins: ${wins}`;
 //place image value that matches with the random word
     if (word == 'mimosa'){
-        picID.src = ',,.hangman/assets/mimosa.png';
+        picID.src = '../hangman/assets/mimosa.png';
          
     }
     else if(word == 'gimlet'){
-        picID.src = '../hangman/assets/gimlet.png';
+        picID.src ="../hangman/assets/mimosa.png";
 
     }
     else if (word=='mojito'){
