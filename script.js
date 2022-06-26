@@ -38,7 +38,7 @@ const setBoard = function(){
          
     }
     else if(word == 'gimlet'){
-        picID.src ="../hangman/assets/mimosa.png";
+        picID.src ="../hangman/assets/gimlet.png";
 
     }
     else if (word=='mojito'){
