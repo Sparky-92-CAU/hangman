@@ -1,14 +1,87 @@
 body{
-    background-image: url('../hangman/assets/back.jpg');
-    
-    
+    background-image: url('assets/back.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
 .jumbotron{
-
-    margin-top: 15%;
+    margin: 2rem auto;
+    padding: clamp(1.25rem, 4vw, 3rem) 1rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.88);
 }
 img{
-    max-width: 200px;
+    display: block;
+    width: min(100%, 200px);
     max-height: 200px;
+    object-fit: contain;
+    margin: 0.75rem auto;
+}
+
+.hangman-drawing {
+    display: block;
+    width: min(100%, 160px);
+    height: auto;
+    margin: 0.75rem auto;
+    fill: none;
+    stroke: #263b4a;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 4;
+}
+
+.hangman-part {
+    display: none;
+}
+
+.hangman-part.is-visible {
+    display: inline;
+}
+
+.game-status {
+    min-height: 1.5em;
+    margin: 0.75rem 0;
+    color: #44515a;
+    font-weight: 600;
+}
+
+.game-status[data-state="win"] {
+    color: #187548;
+}
+
+.game-status[data-state="loss"] {
+    color: #b02a37;
+}
+
+#new-game[hidden] {
+    display: none;
+}
+
+.home-link {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
+    gap: 0.5rem;
+    max-width: 34rem;
+    margin: 1.5rem auto;
+}
+
+.keyboard button {
+    min-height: 2.75rem;
+}
+
+@media (max-width: 576px) {
+    .jumbotron {
+        margin: 1rem auto;
+    }
+
+    .display-4 {
+        font-size: 2.25rem;
+    }
 }
